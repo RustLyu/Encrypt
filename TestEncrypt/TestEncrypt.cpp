@@ -5,6 +5,7 @@
 
 #include "../AesEncryptor.h"
 
+#include "Md5.h"
 
 int main()
 {
@@ -12,6 +13,10 @@ int main()
     Encrypt::AesEncryptor kk(key);
     auto ret = kk.EncryptString("1222222");
     auto outKK = kk.DecryptString(ret);
+    Encrypt::MD5 md5Test;
+    const char* buffer = "KKKKK";
+    md5Test.add(buffer, strlen(buffer));
+    std::cout << md5Test.getHash() << std::endl;
     std::cout << "Hello World!\n";
 }
 
