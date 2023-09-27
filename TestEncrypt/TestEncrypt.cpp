@@ -9,13 +9,14 @@
 
 int main()
 {
-    unsigned char key[16] = {'a','b','c','d','e','f','g','h','g','h','i','j','k','l','m','n'};
+    unsigned char key[16] = { 'L','v','Y','e','K','o','W','P','e','W','p','i','j','s','t','n' };
     Encrypt::AesEncryptor kk(key);
     auto ret = kk.EncryptString("1222222");
-    auto outKK = kk.DecryptString(ret);
+    auto outKK = kk.DecryptString("F16F811766D7784F660EA5B56C3364AEF893217833BB6D8DA3137D90B50E9C47");
     Encrypt::MD5 md5Test;
     const char* buffer = "KKKKK";
-    md5Test.add(buffer, strlen(buffer));
+    md5Test.addFile(R"(C:\Users\zl\Documents\ufab\demo_doctor1@ulab.com\ab39e38c-e188-11ed-978b-0299110ccc45\Photo\Photo.version.json)");
+    //md5Test.add(buffer, strlen(buffer));
     std::cout << md5Test.getHash() << std::endl;
     std::cout << "Hello World!\n";
 }

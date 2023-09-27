@@ -36,7 +36,7 @@ namespace Encrypt
 	  md5.add(pointer to fresh data, number of new bytes);
 	std::string myHash3 = md5.getHash();
   */
-	UDEF_Class MD5 //: public Hash
+	PORTALAPI_UDEF_Class MD5 //: public Hash
 	{
 	public:
 		/// split into 64 byte blocks (=> 512 bits), hash is 16 bytes long

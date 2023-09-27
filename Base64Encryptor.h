@@ -12,7 +12,7 @@ namespace Encrypt
 		"0123456789+/";
 
 	class AES;
-	UDEF_Class Base64Encryptor
+	PORTALAPI_UDEF_Class Base64Encryptor
 	{
 	public:
 		Base64Encryptor();

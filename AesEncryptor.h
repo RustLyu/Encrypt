@@ -8,7 +8,7 @@ namespace Encrypt
 {
 	class AES;
 
-	UDEF_Class AesEncryptor
+	PORTALAPI_UDEF_Class AesEncryptor
 	{
 	public:
 		AesEncryptor(unsigned char* key);
